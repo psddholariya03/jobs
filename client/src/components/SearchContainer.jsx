@@ -1,4 +1,4 @@
-import { FormRow, FormRowSelect, SubmitBtn } from '.';
+import { FormRow, FormRowSelect, SubmitBtn } from '../components';
 import Wrapper from '../assets/wrappers/DashboardFormPage';
 import { Form, useSubmit, Link } from 'react-router-dom';
 import { JOB_TYPE, JOB_STATUS, JOB_SORT_BY } from '../../../utils/constants';
@@ -62,6 +62,7 @@ const SearchContainer = () => {
           <Link to='/dashboard/all-jobs' className='btn form-btn delete-btn'>
             Reset Search Values
           </Link>
+          <SubmitBtn/>
         </div>
       </Form>
     </Wrapper>
